@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #9bbec7;
+  --secondary-color: #eafffd;
+  --text-color: #0a014f;
+  --background-color: #ecf0f1;
+  --completed-color: #2e8b57;
+  --font-family: "Google Sans", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* ================= HEADER ================= */
+
+.header-container {
+  display: grid;
+  grid-template-columns: 40px auto 48px;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--primary-color);
+}
+
+.logo-con img {
+  width: 100%;
+  height: auto;
+}
+
+.header-container span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-container {
+  display: none;
+  grid-column: 1 / 4;
+}
+
+.nav-container.active {
+  display: block;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container li {
+  padding: 0.75rem;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+}
+
+.nav-container a:hover,
+.nav-container a.active {
+  background: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* ================= HAMBURGER ================= */
+
+.hamburger-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-container::after {
+  content: "\2630";
+  font-size: 2rem;
+}
+
+.hamburger-container.active::after {
+  content: "\00d7";
+}
+
+/* ================= MAIN ================= */
+
+main h1 {
+  padding: 1rem;
+}
+
+.info {
+  width: 95%;
+  margin: auto;
+}
+
+.about,
+.photo {
+  border: 1px solid var(--primary-color);
+  background: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.about h2,
+.photo h2,
+.certificate h2 {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.about p {
+  padding: 1rem;
+}
+
+.photo img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+/* ================= CERTIFICATE ================= */
+
+.certificate {
+  width: 95%;
+  margin: auto;
+}
+
+.course-type {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.course-type button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.course-type button:hover {
+  background: var(--text-color);
+}
+
+.courses {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.course-card {
+  border: 1px solid var(--primary-color);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+}
+
+.course-card.completed {
+  background: var(--completed-color);
+  color: white;
+}
+
+.total-credit {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  background: var(--primary-color);
+  margin-top: 2rem;
+}
+
+footer p {
+  text-align: center;
+  padding: 0.5rem;
+}

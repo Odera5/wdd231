@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WDD 231 | Kingsley Ani</title>
+    <meta
+      name="description"
+      content="Kingsley Ani's WDD 231 course home page."
+    />
+    <meta name="author" content="Kingsley Odera Ani" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header-container">
+      <div class="logo-con">
+        <!-- Change this to logo.svg later -->
+        <img src="images/home.png" alt="Site Logo" width="40" />
+      </div>
+
+      <span>Kingsley Ani</span>
+
+      <div id="hamburger" class="hamburger-container"></div>
+
+      <nav class="nav-container" id="nav">
+        <ul>
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+
+          <li>
+            <a href="chamber/index.html">Chamber</a>
+          </li>
+
+          <li>
+            <a href="final/index.html">Final</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+
+      <div class="info">
+        <section class="about">
+          <h2>About Me</h2>
+
+          <p>
+            Hello! My name is Kingsley Ani. I enjoy web development and software
+            engineering. I am currently studying WDD 231 while building my
+            skills in JavaScript, HTML, and CSS.
+          </p>
+        </section>
+
+        <section class="photo">
+          <h2>Student Photo</h2>
+
+          <img src="images/kingsley.jpg" alt="Kingsley Ani" />
+        </section>
+      </div>
+
+      <section class="certificate">
+        <h2>Web & Computer Programming Certificate</h2>
+
+        <div class="course-type">
+          <button id="all">All</button>
+          <button id="wdd">WDD</button>
+          <button id="cse">CSE</button>
+        </div>
+
+        <!-- JavaScript will generate the courses -->
+        <div class="courses" id="courses"></div>
+
+        <!-- JavaScript will generate total credits -->
+        <div class="total-credit">
+          <p id="total-credit"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="icons">
+        <a
+          href="https://github.com/YOUR_GITHUB_USERNAME"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/github.svg" alt="GitHub" />
+        </a>
+
+        <a
+          href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/linkedin.svg" alt="LinkedIn" />
+        </a>
+
+        <a href="https://x.com/YOUR_X_USERNAME" target="_blank" rel="noopener">
+          <img src="images/twitter.svg" alt="X" />
+        </a>
+      </div>
+
+      <p>
+        &copy;
+        <span id="year"></span>
+        | Kingsley Ani | Nigeria
+      </p>
+
+      <p>
+        Last Modification:
+        <span id="last-modified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
