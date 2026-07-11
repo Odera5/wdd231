@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 | Chamber Directory</title>
+    <meta
+      name="description"
+      content="This is the Directory of Chamber of commerce that showcases its member"
+    />
+    <meta name="author" content="Kingsley Odera Ani" />
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- FaceBook Social media meta -->
+    <meta property="og:title" content="Ibadan Chamber Directory" />
+    <meta
+      property="og:description"
+      content=" This is the Directory of Chamber of commerce that showcases its member"
+    />
+    <meta
+      property="og:image"
+      content="https://odera5.github.io/wdd231/chamber/images/favicon.ico"
+    />
+    <meta
+      property="og:url"
+      content="https://odera5.github.io/wdd231/chamber/directory.html"
+    />
+    <!-- normalize.css style -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <!-- small.css style -->
+    <link rel="stylesheet" href="styles/small.css" />
+    <!-- larger.css style -->
+    <link rel="stylesheet" href="styles/larger.css" />
+    <!-- directory.js script -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo-container">
+        <img
+          src="https://github.com/devdoris/wdd231/blob/main/chamber/images/logo.png?raw=true"
+          alt="Ibadan Chamber of Commerce Logo"
+          width="60"
+          height="60"
+        />
+        <span>Ibadan chamber of commerce</span>
+      </div>
+      <nav class="navigation">
+        <ul class="list-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+      <div class="hambuger-container" id="hambuger">
+        <div class="hambuger-icon"></div>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1>Member Directory</h1>
+      <div class="view-buttons">
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
+      </div>
+      <div class="directory-container grid" id="directory"></div>
+    </main>
+    <footer class="footer-container">
+      <div class="contact">
+        <p>Ibadan Chamber of Commerce</p>
+        <p>info@ibadanchamber.org</p>
+        <p>+234 800 000 0000</p>
+      </div>
+      <p>
+        &copy; <span id="year"></span> Ibadan Chamber of Commerce |Kingsley
+        Odera Ani | WDD 231 | All rights reserved.
+      </p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+  </body>
+</html>

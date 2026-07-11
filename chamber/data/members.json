@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "John Doe",
+      "address": "123 Main St, Anytown, USA",
+      "phone": "123-456-7890",
+      "website": "https://johndoe.example.com",
+      "image": "gino.png",
+      "membershipLevel": 1,
+      "description": "Leading provider of tech solutions in Ibadan"
+    },
+    {
+      "name": "Jane Smith",
+      "address": "456 Elm St, Othertown, USA",
+      "phone": "987-654-3210",
+      "website": "https://janesmith.example.com",
+      "image": "gino.png",
+      "membershipLevel": 2,
+      "description": "Leading provider of tech solutions in Ibadan"
+    },
+    {
+      "name": "Alice Johnson",
+      "address": "789 Oak St, Sometown, USA",
+      "phone": "555-123-4567",
+      "website": "https://alicejohnson.example.com",
+      "image": "gino.png",
+      "membershipLevel": 3,
+      "industry": "Technology"
+    },
+    {
+      "name": "Bob Brown",
+      "address": "321 Pine St, Anycity, USA",
+      "phone": "444-555-6666",
+      "website": "https://bobbrown.example.com",
+      "image": "gino.png",
+      "membershipLevel": 1,
+      "description": "Leading provider of tech solutions in Ibadan"
+    },
+    {
+      "name": "Charlie Davis",
+      "address": "654 Maple St, Othercity, USA",
+      "phone": "333-222-1111",
+      "website": "https://charliedavis.example.com",
+      "image": "gino.png",
+      "membershipLevel": 2,
+      "description": "Leading provider of tech solutions in Ibadan"
+    },
+    {
+      "name": "Diana Evans",
+      "address": "987 Cedar St, Somecity, USA",
+      "phone": "777-888-9999",
+      "website": "https://dianaevans.example.com",
+      "image": "gino.png",
+      "membershipLevel": 3,
+      "industry": "Banking"
+    },
+    {
+      "name": "Ethan Foster",
+      "address": "159 Birch St, Anothertown, USA",
+      "phone": "222-333-4444",
+      "website": "https://ethanfoster.example.com",
+      "image": "gino.png",
+      "membershipLevel": 1,
+      "description": "Leading logistics provider in Ibadan"
+    }
+  ]
+}

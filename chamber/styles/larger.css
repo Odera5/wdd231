@@ -1,0 +1,10 @@
+@media (min-width: 567px) {
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+  .hambuger-container {
+    display: none;
+  }
+}

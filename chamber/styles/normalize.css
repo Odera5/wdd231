@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #19647e;
+  --text-color: #eee;
+  --text-size: 1.5rem;
+  --secondary-color: #eaf6ff;
+  --background-color: #f6f6f6;
+  --accent-color: #555;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  color: var(--text-color);
+  font-size: var(--text-size);
+  background-color: var(--background-color);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+}
+.navigation {
+  display: block;
+}
+.list-container li {
+  list-style: none;
+}
+.list-container a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.footer-container {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+}
+.main-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color: var(--accent-color);
+}
+.directory-container {
+  color: var(--accent-color);
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+section {
+  font-size: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.2);
+  overflow-wrap: break-word;
+}
+.grid section {
+  display: block;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list img {
+  display: none;
+}
+.directory-container.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.directory-container.list section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.directory-container.list section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.directory-container.list img {
+  display: none;
+}
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

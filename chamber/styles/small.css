@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #19647e;
+  --text-color: #eee;
+  --text-size: 1.5rem;
+  --secondary-color: #eaf6ff;
+  --background-color: #f6f6f6;
+  --accent-color: #555;
+}
+
+@media (max-width: 567px) {
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .list-container a {
+    color: var(--accent-color);
+  }
+  .navigation {
+    display: none;
+  }
+  .show-navigation {
+    display: block;
+    position: fixed;
+    top: 4.5rem;
+    right: 0;
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+  }
+  .hambuger-container {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hambuger-icon::after {
+    content: "\2630";
+    font-size: 1.5rem;
+  }
+
+  .hambuger-icon.active::after {
+    content: "\00d7";
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  section {
+    width: 100%;
+  }
+}
