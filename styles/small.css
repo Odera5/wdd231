@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary-color: #9bbec7;
-  --secondary-color: #eafffd;
+  --primary-color: white;
+  --secondary-color: #ddd;
   --text-color: #0a014f;
   --background-color: #ecf0f1;
   --completed-color: #2e8b57;
@@ -29,13 +29,18 @@ body {
   gap: 0.75rem;
   padding: 1rem;
   background: var(--primary-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .logo-con img {
-  width: 100%;
   height: auto;
 }
-
+.logo-con {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .header-container span {
   font-size: 1.5rem;
   font-weight: 600;
@@ -68,7 +73,7 @@ body {
 
 .nav-container a:hover,
 .nav-container a.active {
-  background: white;
+  background: #eee;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -106,8 +111,8 @@ main h1 {
 
 .about,
 .photo {
-  border: 1px solid var(--primary-color);
-  background: var(--secondary-color);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  border: 1px solid #ddd;
   margin-bottom: 1.5rem;
 }
 
@@ -136,6 +141,8 @@ main h1 {
 .certificate {
   width: 95%;
   margin: auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
 }
 
 .course-type {
@@ -156,7 +163,8 @@ main h1 {
 }
 
 .course-type button:hover {
-  background: var(--text-color);
+  background: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .courses {
@@ -166,7 +174,7 @@ main h1 {
 }
 
 .course-card {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
   padding: 0.75rem;
   text-align: center;
   border-radius: 5px;
@@ -199,7 +207,7 @@ main h1 {
 }
 
 footer {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   margin-top: 2rem;
 }
 

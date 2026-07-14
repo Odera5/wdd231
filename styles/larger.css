@@ -2,7 +2,7 @@
   /* ================= HEADER ================= */
 
   .header-container {
-    grid-template-columns: 40px 220px auto;
+    grid-template-columns: 10rem auto;
   }
 
   .hamburger-container {
