@@ -2,10 +2,10 @@
   /* ================= HEADER ================= */
 
   .header-container {
-    grid-template-columns: 10rem auto;
+    grid-template-columns: 15rem auto;
   }
 
-  .hamburger-container {
+  #hamburger {
     display: none;
   }
 
@@ -18,7 +18,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .nav-container li {
