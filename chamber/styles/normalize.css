@@ -1,6 +1,7 @@
 :root {
   --primary-color: #19647e;
-  --text-color: #eee;
+  --text-color: #222;
+  --header-text: #eee;
   --text-size: 1.5rem;
   --secondary-color: #eaf6ff;
   --background-color: #f6f6f6;
@@ -17,7 +18,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  min-height: 100vh;
   color: var(--text-color);
   font-size: var(--text-size);
   background-color: var(--background-color);
@@ -31,6 +32,11 @@ body {
   position: sticky;
   top: 0;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 .navigation {
   display: block;
 }
@@ -40,6 +46,17 @@ body {
 .list-container a {
   text-decoration: none;
   color: var(--text-color);
+  padding: 0.5rem;
+}
+.list-container a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.list-container a.active {
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
 }
 .footer-container {
   background-color: var(--primary-color);
@@ -92,12 +109,6 @@ section {
 }
 
 .directory-container.list section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-.directory-container.list section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +117,8 @@ section {
 .directory-container.list img {
   display: none;
 }
-.active {
-  font-weight: bold;
-  text-decoration: underline;
+.header-container,
+.footer-container,
+.list-container a {
+  color: var(--header-text);
 }
