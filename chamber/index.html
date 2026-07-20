@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 | Chamber Home</title>
+
+    <meta
+      name="description"
+      content="Welcome to the Ibadan Chamber of Commerce. Connect with local businesses, discover opportunities, and stay informed about community events."
+    />
+
+    <meta name="author" content="Kingsley Odera Ani" />
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Facebook Social Media Meta -->
+    <meta property="og:title" content="Ibadan Chamber of Commerce" />
+
+    <meta
+      property="og:description"
+      content="Welcome to the Ibadan Chamber of Commerce where businesses connect and grow together."
+    />
+
+    <meta
+      property="og:image"
+      content="https://odera5.github.io/wdd231/chamber/images/favicon.ico"
+    />
+
+    <meta
+      property="og:url"
+      content="https://odera5.github.io/wdd231/chamber/index.html"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header-container">
+      <div class="logo-container">
+        <img
+          src="images/logo.png"
+          alt="Ibadan Chamber of Commerce Logo"
+          width="60"
+          height="60"
+        />
+        <span>Ibadan Chamber of Commerce</span>
+      </div>
+
+      <nav class="navigation">
+        <ul class="list-container">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+
+      <div class="hambuger-container" id="hambuger">
+        <div class="hambuger-icon"></div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero -->
+
+      <section class="hero">
+        <img
+          src="images/hero.jpg"
+          alt="Ibadan city skyline"
+          width="1200"
+          height="600"
+        />
+
+        <a href="join.html" class="cta-button"> Join the Chamber </a>
+      </section>
+
+      <!-- Information -->
+
+      <section class="info-container">
+        <section class="events">
+          <h2>Current Events</h2>
+
+          <p>
+            Join us for the Ibadan Business Networking Forum this month. Meet
+            local entrepreneurs, investors, and business leaders while
+            discovering new opportunities for collaboration.
+          </p>
+        </section>
+
+        <section class="weather">
+          <h2>Current Weather</h2>
+
+          <p>
+            <strong>Temperature:</strong>
+            <span id="temperature"></span>
+          </p>
+
+          <p>
+            <strong>Condition:</strong>
+            <span id="description"></span>
+          </p>
+        </section>
+
+        <section class="forecast">
+          <h2>3-Day Forecast</h2>
+
+          <div id="forecast"></div>
+        </section>
+      </section>
+
+      <!-- Spotlights -->
+
+      <section class="spotlights">
+        <h2>Business Spotlights</h2>
+
+        <div id="spotlights" class="spotlight-container"></div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="contact">
+        <p>Ibadan Chamber of Commerce</p>
+        <p>info@ibadanchamber.org</p>
+        <p>+234 800 000 0000</p>
+      </div>
+
+      <p>
+        &copy;
+        <span id="year"></span>
+        Ibadan Chamber of Commerce | Kingsley Odera Ani | WDD 231 | All rights
+        reserved.
+      </p>
+
+      <p>
+        Last Modified:
+        <span id="last-modified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
